@@ -1,3 +1,21 @@
 <title>Speed Rocket - About</title>
 <h2>About Us</h2>
-<p>Tell people about Speed Rocket.</p>
+<p>aur mummy good morning.</p>
+<script>
+    // Smooth fade-out before link navigation
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+  
+        // Only apply to internal links
+        if (href && href.endsWith('.html')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300); // Delay must match animation duration
+        }
+      });
+    });
+  </script>
+  

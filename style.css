@@ -79,4 +79,29 @@
     font-size: 14px;
     color: #8b949e;
   }
+/* Page fade-in animation */
+body {
+    animation: fadeIn 0.8s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Fade IN on load */
+body {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Fade OUT on link click */
+  body.fade-out {
+    opacity: 0;
+  }
   
